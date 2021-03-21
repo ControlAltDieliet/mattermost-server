@@ -90,6 +90,7 @@ require (
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.14.0 // indirect
 	github.com/prometheus/procfs v0.2.0 // indirect
+	github.com/ramya-rao-a/go-outline v0.0.0-20200117021646-2a048b4510eb // indirect
 	github.com/reflog/dateconstraints v0.2.1
 	github.com/remyoudompheng/bigfft v0.0.0-20190728182440-6a916e37a237 // indirect
 	github.com/rs/cors v1.7.0
@@ -121,10 +122,10 @@ require (
 	golang.org/x/crypto v0.0.0-20201002170205-7f63de1d35b0
 	golang.org/x/image v0.0.0-20200927104501-e162460cd6b5
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
-	golang.org/x/net v0.0.0-20201006153459-a7d1128ccaa0
-	golang.org/x/sys v0.0.0-20201007165808-a893ed343c85 // indirect
+	golang.org/x/net v0.0.0-20201021035429-f5854403a974
 	golang.org/x/text v0.3.3
-	golang.org/x/tools v0.0.0-20201008025239-9df69603baec
+	golang.org/x/tools v0.1.1-0.20210317201901-4599a76b0b9a
+	golang.org/x/tools/gopls v0.6.8 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
 	google.golang.org/genproto v0.0.0-20201007142714-5c0e72c5e71e // indirect
 	google.golang.org/grpc v1.32.0 // indirect
@@ -136,7 +137,6 @@ require (
 	gopkg.in/olivere/elastic.v6 v6.2.35
 	gopkg.in/yaml.v2 v2.3.0
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
-	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 	willnorris.com/go/imageproxy v0.10.0
 )
 
