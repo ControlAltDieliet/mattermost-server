@@ -16,7 +16,8 @@ import (
 	"strings"
 
 	"github.com/disintegration/imaging"
-	"github.com/mattermost/mattermost-server/v5/mlog"
+
+	"github.com/mattermost/mattermost-server/v5/shared/mlog"
 )
 
 const (
@@ -44,6 +45,7 @@ type FileInfo struct {
 	Id              string  `json:"id"`
 	CreatorId       string  `json:"user_id"`
 	PostId          string  `json:"post_id,omitempty"`
+	ChannelId       string  `db:"-" json:"channel_id"`
 	CreateAt        int64   `json:"create_at"`
 	UpdateAt        int64   `json:"update_at"`
 	DeleteAt        int64   `json:"delete_at"`
@@ -161,7 +163,7 @@ func GenerateMiniPreviewImage(img image.Image) *[]byte {
 	buf := new(bytes.Buffer)
 
 	if err := jpeg.Encode(buf, preview, &jpeg.Options{Quality: 90}); err != nil {
-		mlog.Error("Unable to encode image as mini preview jpg", mlog.Err(err))
+		mlog.Info("Unable to encode image as mini preview jpg", mlog.Err(err))
 		return nil
 	}
 	data := buf.Bytes()
